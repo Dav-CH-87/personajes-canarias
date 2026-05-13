@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Benito Pérez Galdós",
+    "profesion": "Escritor",
+    "foto": "/benito.jpg",
+    "biografia": "Benito Pérez Galdós fue un novelista, dramaturgo y cronista español nacido en Las Palmas de Gran Canaria en 1843. Es considerado uno de los escritores más importantes de la literatura española del siglo XIX. Galdós es conocido por sus novelas realistas que retratan la sociedad española de su época, especialmente en su serie de novelas titulada 'Episodios Nacionales', que narra la historia de España desde la invasión napoleónica hasta finales del siglo XIX. Su obra abarca una amplia gama de temas, desde la política y la sociedad hasta la psicología humana, y su estilo se caracteriza por su detallada descripción y su aguda observación social."
+  },
+  {
+    "id": 2,
+    "nombre": "César Manrique",
+    "profesion": "Artista y arquitecto",
+    "foto": "/cesar.jpg",
+    "biografia": "César Manrique fue un artista, arquitecto y ecologista español nacido en Arrecife, Lanzarote, en 1919. Es conocido por su compromiso con la conservación del medio ambiente y su influencia en el desarrollo de la arquitectura y el arte en las Islas Canarias. Manrique promovió un estilo de vida sostenible y defendió la integración armoniosa de la naturaleza y la cultura en sus obras. Su legado incluye la creación de espacios públicos, jardines y edificios que reflejan su visión de una convivencia respetuosa entre el ser humano y su entorno natural."
+  },
+  {
+    "id": 3,
+    "nombre": "Alfredo Kraus",
+    "profesion": "Tenor",
+    "foto": "/Alfredo.jpg",
+    "biografia": "Alfredo Kraus fue un tenor español nacido en Las   Palmas de Gran Canaria en 1927. Es considerado uno de los tenores más importantes del siglo XX, conocido por su técnica vocal impecable y su capacidad para interpretar una amplia gama de repertorio operístico. Kraus se destacó por su interpretación de roles en óperas italianas, especialmente en las obras de Verdi y Puccini. A lo largo de su carrera, actuó en los principales teatros de ópera del mundo y dejó un legado duradero como uno de los grandes intérpretes de la música clásica."
+  },
+  {
+    "id": 4,
+    "nombre": "Josefina de la Torre",
+    "profesion": "Poeta, novelista y actriz",
+    "foto": "/Josefina.jpg",
+    "biografia": "Josefina de la Torre fue una poeta, novelista y actriz española nacida en Las Palmas de Gran Canaria en 1920. Es conocida por su obra literaria que aborda temas sociales y políticos de su época, así como por su participación en el teatro y el cine. Su legado incluye la creación de personajes femeninos complejos y la exploración de las dinámicas de poder en la sociedad canaria."
+  },
+  {
+    "id": 5,
+    "nombre": "Óscar Domínguez",
+    "profesion": "Pintor surrealista",
+    "foto": "/Oscar.jpg",
+    "biografia": "Óscar Domínguez fue un pintor surrealista español nacido en La Laguna, Tenerife, en 1906. Es conocido por su estilo único que combina elementos surrealistas con influencias de la cultura canaria. Domínguez exploró temas como el subconsciente, los sueños y la fantasía en su obra, utilizando técnicas innovadoras y materiales poco convencionales. Su legado incluye una serie de pinturas que reflejan su visión artística y su contribución al movimiento surrealista."
+  }
+]
