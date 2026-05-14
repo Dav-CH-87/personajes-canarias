@@ -10,7 +10,8 @@ import personajes from './data/data.json';
 
 /**
  * Definición de la interfaz Personaje para tipar los datos de los personajes 
- * que se mostrarán en la aplicación. Cada personaje tiene un id, nombre, profesión, foto y biografía.
+ * que se mostrarán en la aplicación. Cada personaje tiene un id, nombre, 
+ * profesión, foto y biografía todas definidas de tipo string.
  */
 
 interface Personaje {

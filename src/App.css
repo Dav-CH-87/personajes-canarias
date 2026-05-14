@@ -1,7 +1,16 @@
+/**
+ * Archivo de estilos CSS para la aplicación de personajes canarios.
+ * Define el diseño y la apariencia de los componentes, incluyendo la disposición de las tarjetas, 
+ * el estilo del texto, los botones y el modal para mostrar detalles adicionales.
+ */
 * {
   box-sizing: border-box;
 }
 
+/**
+ * Estilos globales para el cuerpo de la aplicación, estableciendo márgenes, fuente, colores de fondo y texto.
+ * El fondo es un color claro para mejorar la legibilidad, y el texto es oscuro para un buen contraste.
+ */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,6 +18,11 @@ body {
   color: #111827;
 }
 
+/**
+ * Estilos para el contenedor principal de la aplicación, con un mínimo de altura para ocupar toda la pantalla,
+ * padding para separar el contenido de los bordes y centrado del texto. El título principal tiene un tamaño 
+ * de fuente grande y un margen inferior para separar del contenido siguiente.
+ */
 .app {
   min-height: 100vh;
   padding: 40px 20px;
@@ -21,6 +35,12 @@ body {
   color: black;
 }
 
+/**
+ * Estilos para el contenedor de las tarjetas, utilizando un diseño de cuadrícula (grid) para organizar las tarjetas
+ * de manera ordenada. Las tarjetas se ajustan automáticamente al tamaño de la pantalla, con un espacio entre ellas.
+ * El contenedor tiene un ancho máximo para evitar que las tarjetas se extiendan demasiado en pantallas grandes, 
+ * y está centrado horizontalmente.
+ */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -65,30 +85,13 @@ body {
   font-size: 1rem;
 }
 
-.btn-detalles { 
-  margin-top: 12px;
-  padding: 10px 16px;
-  background-color: #3ee5a5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
 
-.btn-cerrar {
-  margin-top: 20px;
-  padding: 10px 16px;
-  background-color: #3ee5a5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
-
+/**
+ * Estilos para el contenedor de búsqueda, con un diseño centrado y un campo de entrada que se expande al enfocarse.
+ * El campo de entrada tiene un borde suave, bordes redondeados y una sombra para darle profundidad. Al enfocarse,
+ * el borde cambia a un color azul y la sombra se intensifica, además de un ligero aumento de tamaño para destacar
+ * visualmente el campo activo.
+ */
 .search-container {
   display: flex;
   justify-content: center;
@@ -111,6 +114,36 @@ body {
   border-color: #007bff;
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
   transform: scale(1.02); 
+}
+
+/**
+ * Estilos para los botones de la tarjeta y el modal, con un diseño consistente que incluye un fondo verde, 
+ * texto blanco, bordes redondeados y una transición suave al cambiar el color de fondo. El botón de detalles
+ * tiene un margen superior para separarlo del contenido de la tarjeta, mientras que el botón de cerrar tiene
+ * un margen superior más grande para separarlo del contenido del modal.
+ */
+.btn-detalles { 
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #3ee5a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cerrar {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #3ee5a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
 .modal-overlay {
