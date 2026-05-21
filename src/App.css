@@ -58,7 +58,7 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: scale(1.02);
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
 }
 
@@ -85,7 +85,6 @@ body {
   font-size: 1rem;
 }
 
-
 /**
  * Estilos para el contenedor de búsqueda, con un diseño centrado y un campo de entrada que se expande al enfocarse.
  * El campo de entrada tiene un borde suave, bordes redondeados y una sombra para darle profundidad. Al enfocarse,
@@ -107,7 +106,7 @@ body {
   border-radius: 25px;  
   outline: none;        
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 .search-container input:focus {
@@ -122,6 +121,7 @@ body {
  * tiene un margen superior para separarlo del contenido de la tarjeta, mientras que el botón de cerrar tiene
  * un margen superior más grande para separarlo del contenido del modal.
  */
+
 .btn-detalles { 
   margin-top: 12px;
   padding: 10px 16px;
@@ -131,7 +131,12 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-detalles:hover{
+  transform: scale(1.02);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
 }
 
 .btn-cerrar {
@@ -143,8 +148,21 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.btn-cerrar:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16);
+}
+
+/**
+  * Estilos para el modal que se muestra al hacer clic en el botón de detalles, 
+  * con un fondo semitransparente que cubre toda la pantalla
+  * y un contenido centrado con un fondo blanco, padding y bordes redondeados. 
+  * El título del modal tiene un tamaño de fuente grande y un margen inferior,
+  * mientras que el párrafo de descripción tiene un texto justificado y un interlineado para mejorar la legibilidad.
+  */
 
 .modal-overlay {
   position: fixed;
@@ -173,4 +191,52 @@ body {
   text-align: justify;
   line-height: 1.5;
   margin-top: 15px;
+}
+
+/* Contenedor para centrar el mensaje de carga o error en la pantalla */
+.centro-pantalla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El círculo giratorio (Spinner) */
+.cargador {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-left-color: #3ee5a5; 
+  animation: girar 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+/* Animación para que el cargador gire en bucle */
+/* La animación hace que el círculo gire 360 grados continuamente, creando un efecto de carga visual. */
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo para el texto en caso de que falle la API */
+.error-mensaje {
+  color: #dc2626; 
+  text-align: center;
+}
+
+/* Botón de reintentar dentro de la pantalla de error */
+.error-mensaje button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #3ee5a5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
